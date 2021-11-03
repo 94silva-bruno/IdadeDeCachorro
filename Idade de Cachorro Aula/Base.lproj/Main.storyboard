@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Idade_de_Cachorro_Aula" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro" translatesAutoresizingMaskIntoConstraints="NO" id="f4j-MN-ovh">
+                                <rect key="frame" x="8" y="52" width="398" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="8gV-FV-82a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro, para descobrir a idade dele em anos humanos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-x7-8FZ">
+                                <rect key="frame" x="8" y="235" width="398" height="100"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kF9-g2-34b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZi-FG-JI6">
+                                <rect key="frame" x="107" y="343" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ERF-1I-qte"/>
+                                    <constraint firstAttribute="height" constant="34" id="zxF-TS-0zx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-Ai-Zhm">
+                                <rect key="frame" x="107" y="385" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5eS-fL-3Qk"/>
+                                    <constraint firstAttribute="height" constant="40" id="6oL-dP-K4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="1" maxX="10" maxY="10"/>
+                                <state key="normal" title="Descobrir idade"/>
+                                <connections>
+                                    <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3L-rd-vSo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEK-2r-VAu">
+                                <rect key="frame" x="8" y="433" width="398" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="De1-oa-u64"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.72549019607843135" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f4j-MN-ovh" secondAttribute="trailing" constant="8" id="0F2-ks-w0D"/>
+                            <constraint firstItem="QmD-x7-8FZ" firstAttribute="top" secondItem="f4j-MN-ovh" secondAttribute="bottom" constant="8" id="BEJ-Au-C5Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEK-2r-VAu" secondAttribute="trailing" constant="8" id="ELO-oV-tIX"/>
+                            <constraint firstItem="f4j-MN-ovh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Iri-Hz-fn2"/>
+                            <constraint firstItem="QmD-x7-8FZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="KII-z3-cZ4"/>
+                            <constraint firstItem="sZi-FG-JI6" firstAttribute="top" secondItem="QmD-x7-8FZ" secondAttribute="bottom" constant="8" id="QQi-EH-Xew"/>
+                            <constraint firstItem="oEK-2r-VAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Yis-mh-x93"/>
+                            <constraint firstItem="f4j-MN-ovh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="era-JC-zUF"/>
+                            <constraint firstItem="pwj-Ai-Zhm" firstAttribute="top" secondItem="sZi-FG-JI6" secondAttribute="bottom" constant="8" id="fb8-HK-Fcr"/>
+                            <constraint firstItem="pwj-Ai-Zhm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyM-Se-pPl"/>
+                            <constraint firstItem="sZi-FG-JI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ldQ-Kp-yVo"/>
+                            <constraint firstItem="oEK-2r-VAu" firstAttribute="top" secondItem="pwj-Ai-Zhm" secondAttribute="bottom" constant="8" id="oze-kb-CSs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmD-x7-8FZ" secondAttribute="trailing" constant="8" id="yef-Bq-lSt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="campoIdadeCachorro" destination="sZi-FG-JI6" id="rBg-Uv-R2a"/>
+                        <outlet property="legendaResultado" destination="oEK-2r-VAu" id="DZD-AD-kjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cachorro" width="421" height="404"/>
+    </resources>
+</document>
